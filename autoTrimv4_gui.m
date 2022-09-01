@@ -4,35 +4,6 @@ function [myresults, myfinalresults] = autoTrimv4_gui(sgid,lastDive,totalDives, 
 %     clc;
     addpath("myfunctions\"); % uncomment to run with Matlab / comment to compile
 
-%     fprintf('                   *** SEAGLIDER AUTO TRIMMER ***\n');
-%     fprintf('Important: Make sure .nc files are located in directories named as sgGGG\n\n');
-    
-%     fprintf('sgid= %i | ', sgid);
-%     fprintf('lastDive= %i | ', lastDive);
-%     fprintf('totalDives= %i | ', totalDives);
-%     fprintf('dir= %s', ncDirName);
-    
-%     sgid = input('Enter SG [GGG]: ');
-%     lastDive = input('Enter last dive: ');
-%     totalDives = input('Enter number of dives to analyze: ');
-    
-%     sgDir = "sg" + int2str(sgid);
-%     text = "Enter " + sgDir + " parent path: ";
-%     sgDirParent = input(text, 's');
-    
-%     ncDirName = 'ncfile\sg670';
-%     lastDive = 290;
-%     sgid = 670;
-%     sgDirParent = 'ncfile';
-%     sgDir = 'sg670';
-    
-%     ncDirName = fullfile(sgDirParent, sgDir);
-%     fprintf('Dir: %s \n', ncDirName);
-%     ncDirName = 'C:\Users\christian.saiz\Documents\0_NOAA\1_NOAA_work\Gliders\aoml.glider scripts\Matlab\AutoPilot_slim\ncfile\sg670';
-%     sgid = 670;
-%     lastDive = 290;
-%     totalDives = 3;
-
     imp_c_pitch_arr = [];
     imp_pitch_gain_arr = [];
     imp_cvbd_arr = [];
